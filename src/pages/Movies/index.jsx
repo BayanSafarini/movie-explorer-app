@@ -1,5 +1,6 @@
 import movies from "../../data/movies";
 import MovieCard from "../../componants/MovieCard";
+import "./style.css";
 function Movies() {
   return (
     <main className="movies">

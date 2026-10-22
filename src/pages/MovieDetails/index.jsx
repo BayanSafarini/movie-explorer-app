@@ -1,5 +1,6 @@
 import { useParams } from "react-router";
 import movieData from "../../data/movies";
+import "./style.css";
 
 function MovieDetails() {
   const { movieName } = useParams();

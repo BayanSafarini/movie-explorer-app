@@ -1,0 +1,39 @@
+
+/* ==================== Navbar ==================== */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.navbar__link {
+  padding: 9px 16px;
+
+  color: #94a3b8;
+  border-radius: 9px;
+
+  font-size: 0.92rem;
+  font-weight: 600;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.navbar__link:hover,
+.navbar__link:focus-visible {
+  background-color: #1e293b;
+  color: #ffffff;
+  outline: none;
+}
+
+/* ==================== Responsive ==================== */
+
+@media (max-width: 540px) {
+  .navbar__link {
+    padding: 8px 12px;
+  }
+}

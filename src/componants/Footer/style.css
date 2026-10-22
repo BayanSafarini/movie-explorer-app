@@ -1,0 +1,19 @@
+
+/* ==================== Footer ==================== */
+
+.footer {
+  margin-top: auto;
+  padding: 24px 16px;
+
+  background-color: #090e1a;
+  border-top: 1px solid #25334d;
+
+  text-align: center;
+}
+
+.footer__text {
+  margin: 0;
+
+  color: #64748b;
+  font-size: 0.85rem;
+}

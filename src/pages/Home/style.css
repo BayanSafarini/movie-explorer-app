@@ -1,0 +1,97 @@
+
+/* ==================== Home Page ==================== */
+
+.home {
+  position: relative;
+  isolation: isolate;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: calc(100vh - 170px);
+  padding: 100px 24px;
+
+  overflow: hidden;
+  text-align: center;
+
+  background: radial-gradient(
+    ellipse at 50% 20%,
+    #19355c 0%,
+    #101a2d 45%,
+    #0b1120 78%
+  );
+}
+
+.home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+
+  background: linear-gradient(
+    120deg,
+    transparent 20%,
+    rgba(59, 130, 246, 0.08) 55%,
+    transparent 90%
+  );
+}
+
+/* ==================== Title ==================== */
+
+.home__title {
+  max-width: 850px;
+  margin: 0 0 20px;
+
+  color: #ffffff;
+  font-size: clamp(2.6rem, 7vw, 5.2rem);
+  font-weight: 850;
+  line-height: 1.1;
+  letter-spacing: -0.055em;
+}
+
+/* ==================== Description ==================== */
+
+.home__description {
+  max-width: 570px;
+  margin: 0 0 34px;
+
+  color: #aebed2;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  line-height: 1.75;
+}
+
+/* ==================== Explore Button ==================== */
+
+.home__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 15px 30px;
+
+  background-color: #3b82f6;
+  color: #ffffff;
+  border-radius: 10px;
+
+  font-weight: 700;
+
+  box-shadow: 0 10px 35px rgba(37, 99, 235, 0.25);
+
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.home__button:hover {
+  background-color: #2563eb;
+  transform: translateY(-3px);
+  box-shadow: 0 16px 40px rgba(37, 99, 235, 0.35);
+}
+
+.home__button:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 4px;
+}

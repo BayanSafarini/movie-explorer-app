@@ -1,0 +1,41 @@
+
+/* ==================== Movies Page ==================== */
+
+.movies {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-content: start;
+  gap: 24px;
+
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding: 64px 28px 90px;
+}
+
+/* ==================== Title ==================== */
+
+.movies__title {
+  grid-column: 1 / -1;
+
+  margin: 0 0 12px;
+
+  color: #f8fafc;
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -0.04em;
+}
+
+/* ==================== Responsive ==================== */
+
+@media (max-width: 950px) {
+  .movies {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .movies {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 36px 16px 64px;
+  }
+}

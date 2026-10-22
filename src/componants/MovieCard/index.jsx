@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import "./style.css";
 function MovieCard(movie) {
     return (
         <div className="movie-card">

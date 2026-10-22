@@ -1,0 +1,89 @@
+
+/* ==================== Movie Details ==================== */
+
+.movie-details {
+  display: grid;
+  grid-template-columns: 210px 1fr;
+  align-content: start;
+  column-gap: 32px;
+
+  width: min(850px, calc(100% - 32px));
+  margin: 65px auto 90px;
+  padding: 36px;
+
+  background-color: #151f32;
+  border: 1px solid #2a3952;
+  border-radius: 20px;
+
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+/* ==================== Movie Image ==================== */
+
+.movie-details__image {
+  grid-column: 1;
+  grid-row: 1 / 7;
+
+  width: 100%;
+  min-height: 300px;
+
+  object-fit: cover;
+  background: linear-gradient(145deg, #1d4c79, #1c2542);
+  border-radius: 12px;
+}
+
+/* ==================== Movie Title ==================== */
+
+.movie-details__title {
+  grid-column: 2;
+
+  margin: 0 0 18px;
+
+  color: #ffffff;
+  font-size: clamp(1.8rem, 4vw, 2.7rem);
+  letter-spacing: -0.04em;
+  overflow-wrap: anywhere;
+}
+
+/* ==================== Description ==================== */
+
+.movie-details__description {
+  grid-column: 2;
+
+  margin: 0 0 22px;
+
+  color: #b6c4d8;
+  line-height: 1.8;
+}
+
+/* ==================== Movie Information ==================== */
+
+.movie-details__year,
+.movie-details__genre,
+.movie-details__director {
+  grid-column: 2;
+
+  margin: 0 0 12px;
+
+  color: #cbd5e1;
+  font-size: 0.96rem;
+}
+
+/* ==================== Responsive ==================== */
+
+@media (max-width: 640px) {
+  .movie-details {
+    display: flex;
+    flex-direction: column;
+
+    margin: 30px auto 60px;
+    padding: 22px;
+  }
+
+  .movie-details__image {
+    width: 100%;
+    height: 250px;
+    min-height: 0;
+    margin-bottom: 22px;
+  }
+}

@@ -1,0 +1,44 @@
+
+/* ==================== Header ==================== */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+
+  background-color: rgba(11, 17, 32, 0.94);
+  border-bottom: 1px solid #25334d;
+  backdrop-filter: blur(14px);
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 28px;
+}
+
+.header__logo {
+  color: #f8fafc;
+  font-size: 1.45rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.header__logo::first-letter {
+  color: #60a5fa;
+}
+
+/* ==================== Responsive ==================== */
+
+@media (max-width: 540px) {
+  .header__inner {
+    flex-direction: column;
+    gap: 16px;
+    padding: 18px 16px;
+  }
+}
