@@ -9,7 +9,7 @@ function MovieDetails() {
     <main className="movie-details">
       <img
         className="movie-details__image"
-        src="https://via.placeholder.com/100x140"
+        src="https://via.placeholder.com/210x300"
         alt={movie.title}
       />
       <h1 className="movie-details__title">{movieName}</h1>
