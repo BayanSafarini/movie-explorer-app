@@ -1,5 +1,5 @@
 import movies from "../../data/movies";
-import MovieCard from "../../componants/MovieCard";
+import MovieCard from "../../components/MovieCard";
 import "./style.css";
 function Movies() {
   return (

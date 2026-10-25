@@ -5,7 +5,7 @@ import "./style.css";
 function Header() {
     return (
       <header className="header">
-        <div className=" header__inner">
+        <div className="header__inner">
           <Link className="header__logo" to="/">
             Movie Time
           </Link>

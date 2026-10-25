@@ -13,7 +13,7 @@ function MovieCard(movie) {
         <p className="movie-card__genre">Genre: {movie.genre}</p>
         <p className="movie-card__director">Director: {movie.director}</p>
         <p className="movie-card__description">{movie.description}</p>
-        <Link to={`/movies/${movie.title}`} className="movie-card__button">
+        <Link to={`/movies/${movie.slug}`} className="movie-card__button">
           More Details
         </Link>
       </div>

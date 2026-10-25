@@ -1,10 +1,23 @@
-import { useParams } from "react-router";
+import { useParams, Link } from "react-router";
 import movieData from "../../data/movies";
 import "./style.css";
 
 function MovieDetails() {
-  const { movieName } = useParams();
-  const movie = movieData.find((m) => m.title === movieName);
+  const { slug } = useParams();
+  const movie = movieData.find((m) => m.slug === slug);
+  if (!movie) {
+    return (
+      <div className="movie-details__not-found">
+        <h1 className="movie-details__not-found-title">Movie Not Found</h1>
+        <p className="movie-details__not-found-description">
+          Sorry, we couldn't find the movie you're looking for.
+        </p>
+        <Link to="/movies" className="movie-details__back-link">
+          Back to Movies
+        </Link>
+      </div>
+    );
+  }
   return (
     <main className="movie-details">
       <img
@@ -12,7 +25,7 @@ function MovieDetails() {
         src="https://via.placeholder.com/210x300"
         alt={movie.title}
       />
-      <h1 className="movie-details__title">{movieName}</h1>
+      <h1 className="movie-details__title">{movie.title}</h1>
       <p className="movie-details__description">{movie.description}</p>
       <p className="movie-details__year">Year: {movie.year}</p>
       <p className="movie-details__genre">Genre: {movie.genre}</p>

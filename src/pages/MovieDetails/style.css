@@ -69,6 +69,58 @@
   font-size: 0.96rem;
 }
 
+/* ==================== Movie Not Found ==================== */
+
+.movie-details__not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  min-height: 60vh;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.movie-details__not-found-title {
+  margin: 0;
+  color: #f8fafc;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+}
+
+.movie-details__not-found-description {
+  max-width: 450px;
+  margin: 0;
+  color: #94a3b8;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.movie-details__back-link {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 12px 24px;
+
+  background-color: #2563eb;
+  color: #ffffff;
+  border-radius: 8px;
+
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.movie-details__back-link:hover {
+  background-color: #1d4ed8;
+}
+
+.movie-details__back-link:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 3px;
+}
+
 /* ==================== Responsive ==================== */
 
 @media (max-width: 640px) {

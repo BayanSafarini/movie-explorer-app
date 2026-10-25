@@ -30,6 +30,11 @@
   outline: none;
 }
 
+.navbar__link--active {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
 /* ==================== Responsive ==================== */
 
 @media (max-width: 540px) {
