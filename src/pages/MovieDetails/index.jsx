@@ -7,7 +7,7 @@ function MovieDetails() {
   const movie = movieData.find((m) => m.slug === slug);
   if (!movie) {
     return (
-      <div className="movie-details__not-found">
+      <main className="movie-details__not-found">
         <h1 className="movie-details__not-found-title">Movie Not Found</h1>
         <p className="movie-details__not-found-description">
           Sorry, we couldn't find the movie you're looking for.
@@ -15,7 +15,7 @@ function MovieDetails() {
         <Link to="/movies" className="movie-details__back-link">
           Back to Movies
         </Link>
-      </div>
+      </main>
     );
   }
   return (

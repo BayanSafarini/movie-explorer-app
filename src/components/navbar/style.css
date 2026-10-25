@@ -1,4 +1,3 @@
-
 /* ==================== Navbar ==================== */
 
 .navbar {
@@ -28,6 +27,11 @@
   background-color: #1e293b;
   color: #ffffff;
   outline: none;
+}
+
+.navbar__link:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 3px;
 }
 
 .navbar__link--active {
